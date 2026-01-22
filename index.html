@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--ビューポート-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MCMCサウナ</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/akane.css" rel="stylesheet">
+    <!-- <link href="css/saito.css" rel="stylesheet"> -->
+    <!-- <link href="css/tomomi.css" rel="stylesheet"> -->
+    <!-- <link href="css/yuna.css" rel="stylesheet"> -->
+    <link href="css/header.css" rel="stylesheet">
+
+
+    <!--******文字設定********************************-->
+
+    <!-- 日本語　Nicomozi -->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+
+    <!-- Luckiest Guy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- Zen Kaku Gothic New -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+    <!--************************************************-->
+
+
+    <!--jQuery本体-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/kirikae.js"></script>
+
+    <!--ready関数-->
+    <script>
+        $(function () {
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <button class="hamburger-morph" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-morph">
+                <ul class="nav-morph__list">
+                    <a href="index.html"><img src="img/footer-rogo.png" width="250px" alt="mcmcサウナのロゴマーク"></a>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="about/index.html">ABOUT</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="price/index.html">PRICE</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="access/index.html">ACCESS</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="faq/index.html">FAQ</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="info/index.html">INFOMATION</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- トップへ戻るボタン -->
+        <button id="dancingMan" class="scroll-top-btn" aria-label="トップへ戻る">
+            <img src="img/dance-1.PNG" alt="トップへ戻る">
+        </button>
+        <!-- トップへ戻るボタン ここまで-->
+
+
+        <div>
+            <!-- ヘッダー -->
+            <div class="header-wrapper">
+                <div class="top_noren-header">
+                    <a href="index.html"><img src="img/MCMCsauna.png" width="254" height="81" alt="mcmcサウナのロゴ"></a>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div>
+                    <!-- 動画 -->
+                    <video class="sauna-video" src="img/AdobeStock_1519036384.mov" autoplay loop muted playsinline>
+                    </video>
+                </div>
+
+                <!-- ボタン -->
+                <div class="top-button-group">
+                    <div class="top-buttons">
+                        <a href="about/index.html">
+                            <div class="top-button">
+                                <h3 class="foot-nav-base">ABOUT</h3>
+                            </div>
+                        </a>
+                        <a href="price/index.html">
+                            <div class="top-button">
+                                <h3 class="foot-nav-base">PRICE</h3>
+                            </div>
+                        </a>
+                        <a href="access/index.html">
+                            <div class="top-button">
+                                <h3 class="foot-nav-base">ACCESS</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 【境界線】marumaru-top -->
+        <div class="marumaru-top marumaru-white-top top-header-marumaru">
+            <img src="img/marumaru-white-top.png" width="1920" height="53" alt="">
+        </div>
+
+        <main class="top-main">
+            <div class="blue-checkered wave-before">
+                <section>
+                    <div class="w-1440">
+                        <div class="left-right-yohaku top-about">
+                            <h1 class="font-color-blue">about</h1>
+                            <div class="top-about-txt ">
+                                <div>
+                                    <p class="catch_copy font-color-blue">
+                                        <span>東京の喧騒を忘れて、</span>
+                                        <span>自分だけに向き合える贅沢な時間。</span>
+                                        <span>都会で頑張るあなたへ贈る</span>
+                                        <span class="access_address">女性専用サウナがNEW OPEN。</span>
+                                        <span> 美容感度の高いあなたのために、</span>
+                                        <span>初心者でも安心して楽しめる設備と、</span>
+                                        <span>人気のデパコス級アメニティを揃えました。</span>
+                                        <span>明日を輝かせるためのウェルネス・ルーティンを、</span>
+                                        <span>ここで見つけて。</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="top-about-ahiru-button">
+                                <img src="img/ahiru1.png" height="80" width="80" alt="サウナハットを被ったアヒル">
+                                <a href="about/index.html">
+                                    <div class="view-more-buttom">
+                                        <a href="about/index.html">
+                                            <p class="view-more-p">くわしく見る</p>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                </section>
+            </div>
+
+            <!-- 【境界線】wave-top -->
+            <img class="wave-top" src="img/wave-blue-top.png" width="1920" height="" alt="">
+
+            <!-- section 料金表 -->
+            <section class="price-section background-color-blue">
+                <div class="price-w-1000">
+                    <div class="left-right-yohaku">
+                        <div class="box">
+                            <h1 class="font-color-yellow">PRICE</h1>
+                        </div>
+                        <div class="box">
+                            <div class="price-tabs">
+
+                                <div class="tab-buttons two-columns">
+                                    <button class="tab-button active" data-tab="weekday-price">平日</button>
+                                    <button class="tab-button" data-tab="holiday-price">土日祝</button>
+                                </div>
+
+                                <div class="tab-contents two-columns price-two-columns">
+                                    <div class="tab-content active" id="weekday-price">
+                                        <div class="price-box-background">
+                                            <h3 class="font-color-blue price-h3">平日</h3>
+
+                                            <table class="price-table">
+                                                <tr>
+                                                    <th>60分</th>
+                                                    <td>1,100円</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>90分</th>
+                                                    <td>1,450円</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>120分</th>
+                                                    <td>1,800円</td>
+                                                </tr>
+                                            </table>
+                                            <div class="price-table-p">
+                                                <p class="font-color-blue">以降、30分延長につき350円</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-content" id="holiday-price">
+                                        <div class="price-box-background">
+                                            <h3 class="font-color-blue price-h3">土日祝</h3>
+                                            <table class="price-table">
+                                                <tr>
+                                                    <th>60分</th>
+                                                    <th>1,300円</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>90分</th>
+                                                    <th>1,650円</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>120分</th>
+                                                    <th>2,000円</th>
+                                                </tr>
+                                            </table>
+                                            <div class="price-table-p">
+                                                <p class="font-color-blue">以降、30分延長につき450円</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- イラスト　詳しく見る -->
+                <div class="box">
+                    <!-- <div class="top_price_img">
+                        <div class="fluffy"><img src="img/hokahoka.png" alt="湯気"></div>
+                    </div> -->
+                    <div class="top-price-img">
+                        <div class="top-price-button">
+                            <div class="view-more-buttom">
+                                <a href="price/index.html">
+                                    <p class="view-more-p">くわしく見る</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 【境界線】wave-bottom -->
+            <img class="wave-bottom top-information-before" src="img/wave-blue-bottom.png" width="1920" height=""
+                alt="">
+
+            <!-- information -->
+
+            <section class="top-information">
+                <div>
+
+                    <div class="top-information-movie">
+                        <video src="img/Gen-4 Turbo Move the waves of this image 3869254441.mp4" autoplay loop muted
+                            playsinline>
+                        </video>
+                        <div class="top-information-txt">
+                            <div class="top_access_map_text_top information_top">
+                                <img src="img/totonou.png" alt="ととのい中の女の子" class="top_img_totonou">
+                                <div class="access_address">
+                                    <h1 class="font-color-blue top_information_h1">information</h1>
+                                </div>
+                                <img src="img/top_ahiru.png" alt="サウナハットを被ったアヒル" class="top_img_ahuru">
+                            </div>
+                            <div class="information-news">
+                                <div class="top_information_1 top-information-gap-border">
+                                    <div>
+                                        <p class="font-color-blue">2025/06.13</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-color-blue">アメニティについて</p>
+                                    </div>
+                                    <a href="info/index.html" rel="../information">
+                                        <div class="info-view-more">▶</div>
+                                    </a>
+                                </div>
+                                <div class="top_information_1 top-information-gap-border">
+                                    <div>
+                                        <p class="font-color-blue">2025/06.13</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-color-blue">アメニティについて</p>
+                                    </div>
+                                    <a href="info/index.html" rel="../information">
+                                        <div class="info-view-more">▶</div>
+                                    </a>
+                                </div>
+                                <div class="top_information_1">
+                                    <div>
+                                        <p class="font-color-blue">2025/06.13</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-color-blue">アメニティについて</p>
+                                    </div>
+                                    <a href="info/index.html" rel="../information">
+                                        <div class="info-view-more">▶</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 【境界線】marumaru-top -->
+            <div class="marumaru-top marumaru-white-top marumaru-info-after">
+                <img src="img/marumaru-yellow-top.png" width="1920" height="53" alt="">
+            </div>
+
+            <section class="top_access background-color-yellow">
+                <div class="top_access-content">
+                    <h1 class="font-color-blue">ACCESS</h1>
+
+                    <div>
+                        <img src="img/top_access.png" width="339" height="233" alt="お店の外観">
+                    </div>
+
+                    <div class="view-more-buttom">
+                        <a href="price/index.html">
+                            <p class="view-more-p">くわしく見る</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="anime">
+            <div id="animation-container">
+                <img id="sauna-girl" src="img/footer-anime/footer-anime.png" alt="女の子">
+                <div id="steam"></div>
+            </div><!-- footer -->
+            <footer class="top-footer">
+                <img src="img/footer-girl.png" class="footer-girl" alt="フッターに座る女の子">
+                <div class="footer-box">
+                    <!--ひだり-->
+                    <div class="footer-shop">
+                        <a href=""><img src="img/footer-rogo.png" width="200px" alt="MCMCサウナのロゴマーク"></a>
+                        <p>〒888-8888 <br>
+                            東京都世田谷区8-8-88 <br>
+                            TEL：0180-888-8888 <br>
+                            営業時間：11:00〜23:30
+                        </p>
+                    </div>
+                    <!--真ん中-->
+                    <div class="foot-nav">
+                        <div class="foot-nav-1">
+                            <a href="about/index.html">
+                                <div class="foot-nav-base">ABOUT</div>
+                            </a>
+                            <a href="price/index.html">
+                                <div class="foot-nav-base">PRICE</div>
+                            </a>
+                            <a href="access/index.html">
+                                <div class="foot-nav-base">ACCESS</div>
+                            </a>
+                        </div>
+                        <div class="foot-nav-2">
+                            <a href="faq/index.html">
+                                <div class="foot-nav-base">FAQ</div>
+                            </a>
+                            <a href="info/index.html">
+                                <div class="foot-nav-base">INFOMATION</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--みぎ-->
+                    <div class="foot-right">
+                        <div class="foot-right-txt">
+                            <a href="privacy-policy/index.html">・個人情報保護法</a><br>
+                            <a href="contact/index.html">・お問い合わせ</a>
+                        </div>
+                        <div class="foot-right-sns">
+                            <a href="#"><img src="img/Instagram_White.png" alt="インスタグラムロゴ" width="42px"></a>
+                            <a href="#"><img src="img/youtube-White.png" alt="YouTubeロゴ" width="42px"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-duck"></div>
+                <p>© 2025 mcmcサウナ</p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/dance-top.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/steam.js"></script>
+
+</body>
+
+</html>

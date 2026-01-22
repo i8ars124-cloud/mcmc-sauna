@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+
+.foot-right-txt a:hover{
+    color: #fbfb93;
+}
+
+#wrapper {
+    /* パソコン最大のサイズが表示される */
+    margin: 0 auto;
+    max-width: 1920px;
+
+    /* background-color: aqua; */
+}
+
+.w-1440 {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+    /* 左右の余白が以下の色で表示される */
+    /* background-color: blue; */
+}
+
+.left-right-yohaku {
+    width: 78%;
+    margin: 0 auto;
+
+    /* コンテンツ間の隙間は以下の色で表示される */
+    /* background-color: brown; */
+}
+
+.two-columns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/* ***************************** */
+/*　　　　　 フォント　　　　　　　 */
+/* ***************************** */
+
+/* font-size **********************/
+
+html {
+    /* 1rem=10px相当 */
+    font-size: 62.5%;
+}
+
+:root {
+    --h1-font-size: 6rem;
+    --h2-font-size: 3.2rem;
+    --h3-font-size: 2.4rem;
+    --h4-font-size: 2.0rem;
+    --p-font-size: 1.6rem;
+
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 3.125vw;
+    }
+
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
+p {
+    font-size: var(--p-font-size);
+}
+
+/* font-family **********************/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Luckiest Guy", "Nico Moji";
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+}
+
+p {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --h1-font-size: 4rem;
+        --h2-font-size: 2.8rem;
+    }
+}
+
+/* font color ****************************/
+.font-color-blue {
+    color: #5275AE;
+}
+
+.font-color-white {
+    color: #FFFF;
+}
+
+.font-color-yellow {
+    color: #F7F7C3;
+}
+
+/* font color ****************************/
+.background-color-blue {
+    background-color: #5275AE;
+}
+
+.background-color-yellow {
+    background-color: #F7F7C3;
+}
+
+/* ***************************** */
+/*　　　　終了（フォント）　　　　 */
+/* ***************************** */
+
+/* *************************** */
+/*      詳しく見るボタン       */
+/* *************************** */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.view-more-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfb93;
+    width: 17.4rem;
+    height: 5.6rem;
+    border-radius: 2.8rem;
+    transition: 0.3s;
+}
+
+.view-more-p {
+    font-weight: bold;
+    color: #5275AE;
+}
+
+.view-more-buttom:hover {
+    background-color: #FFFF;
+}
+
+/* ******************************** */
+/*     終了（ 詳しく見るボタン）       */
+/* ******************************** */
+
+/* ***************************** */
+/*　　　　 境界線・背景　　　　　　 */
+/* ***************************** */
+
+
+/*** 【背景】黄色チェック **************************************/
+.yellow-checkered {
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #f7f7c3;
+    background-position: center 32px;
+    background-image: linear-gradient(90deg, #ffffdf 3px, transparent 3px), linear-gradient(#ffffdf 3px, transparent 3px);
+    background-size: 68px 68px;
+}
+
+@media only screen and (max-width: 768px) {
+    .yellow-checkered {
+        background-color: #f7f7c3;
+        background-position: center 4.17vw;
+        background-image: linear-gradient(90deg, #ffffdf 0.39vw, transparent 0.39vw), linear-gradient(#ffffdf 0.39vw, transparent 0.39vw);
+        background-size: 8.85vw 8.85vw;
+    }
+}
+
+
+
+/*** 終了(【背景】黄色チェック )**************************************/
+
+
+/* 【背景】青チェック **************************************/
+.blue-checkered {
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #d2eef4;
+    background-position: center 32px;
+
+    background-image: linear-gradient(90deg, #aadce0 3px, transparent 3px), linear-gradient(#aadce0 3px, transparent 3px);
+    background-size: 68px 68px;
+}
+
+@media only screen and (max-width: 768px) {
+    .blue-checkered {
+        background-color: #d2eef4;
+        background-position: center 4.17vw;
+        background-image: linear-gradient(90deg, #aadce0 0.39vw, transparent 0.39vw), linear-gradient(#aadce0 0.39vw, transparent 0.39vw);
+        background-size: 8.85vw 8.85vw;
+    }
+}
+
+/*** 終了(【背景】青チェック )**************************************/
+
+/**** 【境界線】ウェーブ **************************************/
+
+.wave-top,
+.wave-bottom {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920/162;
+}
+
+.wave-top {
+    margin-top: -8.44vw;
+}
+
+.wave-bottom {
+    margin-bottom: -8vw;
+}
+
+.wave-top,
+.wave-bottom {
+    display: block;
+}
+
+/* 前後のセクション設定 */
+.wave-before {
+    padding-bottom: 8.44vw;
+}
+
+.wave-after {
+    padding-top: 8vw;
+}
+
+/* 色 */
+.wave-blue {
+    background-color: #5275AE;
+}
+
+.wave-yellow {
+    background-color: #F7F7C3;
+}
+
+
+/**** 終了(【境界線】ウェーブ )**************************************/
+
+/**** 【境界線】マルマル **************************************/
+/* 共通設定 */
+.marumaru-top img,
+.marumaru-bottom img {
+    display: block;
+    width: 1920px;
+    height: auto;
+}
+
+.marumaru-top,
+.marumaru-bottom {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .marumaru-top img,
+    .marumaru-bottom img {
+        width: 250vw;
+    }
+
+    .marumaru-top,
+    .marumaru-bottom {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+/* blue */
+.marumaru-blue-top img,
+.marumaru-blue-bottom img {
+    aspect-ratio: 1920/53;
+}
+
+.marumaru-blue-top {
+    margin-top: -53px;
+}
+
+.marumaru-blue-bottom {
+    margin-bottom: -53px;
+}
+
+.marumaru-blue-before {
+    padding-bottom: 53px;
+}
+
+.marumaru-blue-after {
+    padding-top: 53px;
+}
+
+@media only screen and (max-width: 768px) {
+    .marumaru-blue-top {
+        margin-top: -6.9vw;
+    }
+
+    .marumaru-blue-bottom {
+        margin-bottom: -6.9vw;
+    }
+
+    .marumaru-blue-before {
+        padding-bottom: 6.9vw;
+    }
+
+    .marumaru-blue-after {
+        padding-top: 6.9vw;
+    }
+}
+
+
+/* white */
+.marumaru-white-top img,
+.marumaru-white-bottom img {
+    aspect-ratio: 1920/42;
+}
+
+.marumaru-white-top {
+    margin-top: -42px;
+}
+
+.marumaru-white-bottom {
+    margin-bottom: -42px;
+}
+
+.marumaru-white-before {
+    padding-bottom: 42px;
+}
+
+.marumaru-white-after {
+    padding-top: 42px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .marumaru-white-top {
+        margin-top: -5.47vw;
+    }
+
+    .marumaru-white-bottom {
+        margin-bottom: -5.47vw;
+    }
+
+    .marumaru-white-before {
+        padding-bottom: 5.47vw;
+    }
+
+    .marumaru-white-after {
+        padding-top: 5.47vw;
+    }
+}
+
+
+
+/**** 終了(【境界線】マルマル)**************************************/
+
+/* ***************************** */
+/*　　　 終了（境界線・背景）　　　 */
+/* ***************************** */

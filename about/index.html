@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--ビューポート-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> | MCMCサウナ</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!-- <link href="../css/akane.css" rel="stylesheet"> -->
+    <!-- <link href="../css/saito.css" rel="stylesheet"> -->
+    <!-- <link href="../css/tomomi.css" rel="stylesheet"> -->
+    <link href="../css/yuna.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+
+
+    <!--******文字設定********************************-->
+    <!-- 英語のみ　Luckiest Guy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- 日本語　Nicomozi -->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+
+    <!-- Zen Kaku Gothic New -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+    <!--************************************************-->
+
+
+    <!--jQuery本体-->
+    <script src="../js/jquery-1.11.2.min.js"></script>
+
+    <!--ready関数-->
+    <script>
+        $(function () {
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- header -->
+        <header>
+            <button class="hamburger-morph" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-morph">
+                <ul class="nav-morph__list">
+                    <a href="../index.html"><img src="../img/footer-rogo.png" width="250px" alt="mcmcサウナのロゴマーク"></a>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="../about/index.html">ABOUT</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="../price/index.html">PRICE</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="../access/index.html">ACCESS</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="../faq/index.html">FAQ</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="../info/index.html">INFOMATION</a></li>
+                    <li class="nav-morph__item"><a class="nav-morph__link" href="../contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- トップへ戻るボタン -->
+        <button id="dancingMan" class="scroll-top-btn" aria-label="トップへ戻る">
+            <img src="../img/dance-1.PNG" alt="トップへ戻る">
+        </button>
+        <!-- トップへ戻るボタン ここまで-->
+
+        <!-- main -->
+        <main>
+
+
+            <!-- section ---------------------------->
+            <section>
+                <div class="about-frame"><!--フレーム-->
+                    <div><!--画像-->
+                        <img class="about-img1" src="../img/Rectangle 1.png" alt="サウナ">
+                    </div>
+
+                    <!-- 【境界線】marumaru-top -->
+                    <div class="marumaru-top marumaru-blue-top">
+                        <img src="../img/marumaru-yellow-top.png" width="1920" height="53" alt="">
+                    </div>
+
+
+                    <div class="marumaru-background-content marumaru-blue">
+                        <!-- 左右の余白 -->
+                        <div class="w-1440">
+                            <div class="left-right-yohaku">
+                                <!--あぼうと-->
+                                <div class="about-about marumaru-background-content marumaru-blue">
+                                    <h1 class="font-color-blue">ABOUT</h1>
+                                    <h4 class="about-about-h4 font-color-blue">都会の喧騒を離れて、心と身体を整える場所</h4>
+                                    <p>東京の中心にありながら、<br>
+                                        静寂と癒しに包まれる女性専用サウナ「mcmcサウナ」が誕生しました。<br>
+                                        日々の忙しさを忘れて、自分自身とゆっくり向き合う——そんな贅沢な時間をお届けします。<br>
+                                        初心者の方でも安心して楽しめるよう、温度や香り、照明にまでこだわったサウナ空間と、<br>
+                                        人気ブランドのアメニティを揃えたパウダールームをご用意。<br>
+                                        <br>
+                                        自然光が差し込む外気浴スペースでは、穏やかな風とともに心までととのっていくのを感じていただけます。<br>
+                                        “美しく、しなやかに生きる女性”のためのウェルネスルーティーンを、ここから始めませんか？
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <svg viewBox="0 0 120 28">
+                        <defs>
+                            <mask id="xxx">
+                                <circle cx="7" cy="12" r="40" fill="#fff" />
+                            </mask>
+
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix" values="
+                                                    1 0 0 0 0  
+                                                    0 1 0 0 0  
+                                                    0 0 1 0 0  
+                                                    0 0 0 13 -9" result="goo" />
+                                <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                            <path id="wave"
+                                d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                        </defs>
+
+                        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+                        <g class="topball">
+                            <image class="ball" href="../img/ahiru3.png" X="95" y="2" width="12" height="12">
+
+
+                                <g class="arrow">
+                                    <polyline class="" points="108,8 110,6 112,8" fill="none" />
+                                    <polyline class="" points="110,6 110,10.5" fill="none" />
+                                </g>
+
+                        </g>
+                        <g class="gooeff">
+                            <circle class="drop drop1" cx="20" cy="2" r="1.8" />
+                            <circle class="drop drop2" cx="25" cy="2.5" r="1.5" />
+                            <circle class="drop drop3" cx="16" cy="2.8" r="1.2" />
+                            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+
+                            <!-- g mask="url(#xxx)">
+                                                <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                                                </g>
+                                            </g -->
+
+                    </svg>
+
+
+
+                    <!-- main パウダールーム -->
+                    <div class="about-ture yellow-white">
+
+                        <main>
+                            <div class="w-1440">
+                                <div class="left-right-yohaku">
+                                    <section>
+                                        <!-- section -->
+                                        <h1 class="about-fac font-color-yellow">facility tour</h1>
+
+                                        <img class="about-fac-img1" src="../img/hokahoka.png" alt="煙のイラスト">
+
+                                        <!-- section -->
+                                        <div class="about-michi1">
+                                            <section class="about-box-background1 about-section">
+                                                <div class="about-h2"></div>
+
+                                                <div class="two-columns about-two-columns">
+                                                    <div class="about-content-left">
+                                                        <img class="about-img" src="../img/locker.png" alt="脱衣所"
+                                                            width="" height="" alt="スキンケア用品">
+                                                    </div>
+
+                                                    <div class="about-content-right">
+                                                        <div class="about-txt">
+                                                            <h3 class="font-color-blue about-h3">ドレスルーム</h3>
+                                                            <p class="font-color-blue about-p">
+                                                                木のぬくもりに包まれた、<br>
+                                                                落ち着いた雰囲気の脱衣スペース。 <br>
+                                                                清潔感のある空間で、<br>
+                                                                心も身もリセットできる時間を。<br>
+                                                        </div>
+
+                                                        <div class="about-right-bottom">
+                                                            <div class="view-more-buttom">
+                                                                <a href="">
+                                                                    <p class="view-more-p">くわしく見る</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </section>
+                                        </div>
+
+
+                                        <!--さうな-->
+                                        <!-- section -->
+                                        <div class="about-michi2">
+                                            <section class="about-box-background2 about-section">
+                                                <div class="about-h2"></div>
+
+                                                <div class="two-columns about-two-columns">
+                                                    <div class="about-content-left">
+                                                        <img class="about-img" src="../img/saunasitu.png" alt="サウナ室"
+                                                            width="" height="" alt="スキンケア用品">
+                                                    </div>
+
+                                                    <div class="about-content-right">
+                                                        <div class="about-txt">
+                                                            <h3 class="font-color-blue about-h3">サウナ</h3>
+                                                            <p class="font-color-blue about-p">
+                                                                体の芯までじんわり温める、<br>
+                                                                本格的なフィンランド式サウナ。<br>
+                                                                静かな空間で、自分と<br>
+                                                                向き合いながら“ととのう”準備を。<br>
+                                                        </div>
+
+                                                        <div class="about-right-bottom">
+                                                            <div class="view-more-buttom">
+                                                                <a href="">
+                                                                    <p class="view-more-p">くわしく見る</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </section>
+                                        </div>
+                                        <img class="about-fac-img4" src="../img/sauna.png" alt="サウナのイラスト">
+
+
+                                        <!--ろうりゅう-->
+                                        <!-- section -->
+                                        <div class="about-michi3">
+                                            <section class="about-box-background3 about-section">
+                                                <div class="about-h2"></div>
+
+                                                <div class="two-columns about-two-columns">
+                                                    <div class="about-content-left">
+                                                        <img class="about-img" src="../img/rouryu.png" alt="ろうりゅう"
+                                                            width="" height="" alt="スキンケア用品">
+                                                    </div>
+
+                                                    <div class="about-content-right">
+                                                        <div class="about-txt">
+                                                            <h3 class="font-color-blue about-h3">ロウリュウ</h3>
+                                                            <p class="font-color-blue about-p">
+                                                                アロマの香りと蒸気が全身を包む、<br>
+                                                                贅沢なリラックスタイム。 <br>
+                                                                深い呼吸とともに、<br>
+                                                                日々の疲れを解き放つ<br>
+                                                                “癒しの儀式”を体感。<br>
+                                                        </div>
+
+                                                        <div class="about-right-bottom">
+                                                            <div class="view-more-buttom">
+                                                                <a href="">
+                                                                    <p class="view-more-p">くわしく見る</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </section>
+                                        </div>
+
+
+                                        <!--みずぶろ-->
+                                        <div class="about-michi4">
+                                            <section class="about-box-background4 about-section">
+                                                <div class="about-h2"></div>
+
+                                                <div class="two-columns about-two-columns">
+                                                    <div class="about-content-left">
+                                                        <img class="about-img" src="../img/mizuburo (2).png" alt="水風呂"
+                                                            width="" height="" alt="スキンケア用品">
+                                                    </div>
+
+                                                    <div class="about-content-right">
+                                                        <div class="about-txt">
+                                                            <h3 class="font-color-blue about-h3">みずぶろ</h3>
+                                                            <p class="font-color-blue about-p">
+                                                                都会の喧騒を忘れるような、<br>
+                                                                ひんやりと澄んだ水風呂。<br>
+                                                                程よい冷たさが心地よく、火照った<br>
+                                                                身体をやさしく包み込みます。<br>
+                                                        </div>
+
+                                                        <div class="about-right-bottom">
+                                                            <div class="view-more-buttom">
+                                                                <a href="">
+                                                                    <p class="view-more-p">くわしく見る</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </section>
+                                        </div>
+                                        <img class="about-fac-img2" src="../img/mizuburo.png" alt="水風呂のイラスト">
+                                        <!--ととのい-->
+                                        <div class="about-michi5">
+                                            <section class="about-box-background5 about-section">
+                                                <div class="about-h2"></div>
+
+                                                <div class="two-columns about-two-columns">
+                                                    <div class="about-content-left">
+                                                        <img class="about-img" src="../img/totonoiisu.png" alt="整いいす"
+                                                            width="" height="" alt="スキンケア用品">
+                                                    </div>
+
+                                                    <div class="about-content-right">
+                                                        <div class="about-txt">
+                                                            <h3 class="font-color-blue about-h3">ととのい</h3>
+                                                            <p class="font-color-blue about-p">
+                                                                外気を感じながら心地よい風に<br>
+                                                                身をゆだねる、<br>
+                                                                至福のチルスペース。 <br>
+                                                                木製のリクライニングチェアで,<br>
+                                                                心と身体が静かにゼロに戻っていく<br>
+                                                        </div>
+
+                                                        <div class="about-right-bottom">
+                                                            <div class="view-more-buttom">
+                                                                <a href="">
+                                                                    <p class="view-more-p">くわしく見る</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                        </div>
+
+
+                                    </section>
+
+                                    <!--パウダールーム-->
+                                    <section class="about-box-background6 about-section">
+                                        <div class="about-h2"></div>
+
+                                        <div class="two-columns about-two-columns">
+                                            <div class="about-content-left">
+                                                <img class="about-img" src="../img/powderroom.png" alt="パウダールーム"
+                                                    width="" height="" alt="スキンケア用品">
+                                            </div>
+
+                                            <div class="about-content-right">
+                                                <div class="about-txt">
+                                                    <h3 class="font-color-blue about-h3">パウダールーム</h3>
+                                                    <p class="font-color-blue about-p">
+                                                        ナチュラルな木のインテリアと<br>
+                                                        柔らかな照明が心を和ませる空間。 <br>
+                                                        自分のペースで身支度を整え、<br>
+                                                        日常へ戻るための小さなリセット時間を。<br>
+                                                </div>
+
+                                                <div class="about-right-bottom">
+                                                    <div class="view-more-buttom">
+                                                        <a href="">
+                                                            <p class="view-more-p">くわしく見る</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </section>
+
+                                    <img class="about-fac-img3" src="../img/saunahima.png" alt="女の子のイラスト">
+
+
+                                </div>
+                            </div>
+                    </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 【境界線】wave-bottom -->
+            <img class="wave-bottom" src="../img/wave-blue-bottom.png" width="1920" height="" alt="">
+
+
+
+            <!--アメニティ-->
+
+            <div class="about-amenity blue-checkered">
+                <div class="w-1440">
+                    <div class="left-right-yohaku">
+                        <h1 class="font-color-blue">AMENITY</h1>
+                        <div class="about-amenity-box">
+                            <div class="about-amenity1">
+
+                                <div class="about-amenity-img1">
+                                    <img src="../img/doraiya.png" alt="ドライヤー">
+                                </div>
+
+                                <section class="about-amenity-box-background about-section">
+                                    <div class="about-h2">
+
+                                        <div class="two-columns about-two-columns">
+
+                                            <div class="about-content-right1">
+                                                <div class="about-txt">
+                                                    <h3 class="font-color-white about-h3">ドライヤー</h3>
+                                                    <p class="font-color-white about-p">
+                                                        風・熱・潤いのバランスにこだわった、<br>
+                                                        高機能ドライヤーをご用意。 <br>
+                                                        髪にやさしくツヤを与えながら<br>
+                                                        忙しい日常の中でも<br>
+                                                        “自分をいたわる時間”を<br>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </section>
+
+                            </div>
+
+                            <div class="about-amenity2">
+                                <div class="about-amenity-img2" enity-img1>
+                                    <img src="../img/sukincare.png" alt="スキンケア">
+                                </div>
+
+                                <section class="about-amenity-box-background about-section">
+                                    <div class="about-h2">
+
+                                        <div class="two-columns about-two-columns">
+
+                                            <div class="about-content-right1">
+                                                <div class="about-txt">
+                                                    <h3 class="font-color-white about-h3">スキンケア</h3>
+                                                    <p class="font-color-white about-p">
+                                                        誰でも安心して使える<br>
+                                                        ドクターズコスメを完備。<br>
+                                                        敏感肌にもやさしく、<br>
+                                                        サウナ後の繊細なお肌をしっかり保湿。<br>
+                                                        素肌からととのう体験を。
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+
+
+
+                            <div class="about-amenity2">
+                                <div class="about-amenity-img3" enity-img1>
+                                    <img src="../img/biganki.png" alt="美顔器">
+                                </div>
+
+                                <section class="about-amenity-box-background about-section">
+                                    <div class="about-h2">
+
+                                        <div class="two-columns about-two-columns">
+
+                                            <div class="about-content-right1">
+                                                <div class="about-txt">
+                                                    <h3 class="font-color-white about-h3">びがんき</h3>
+                                                    <p class="font-color-white about-p">
+                                                        肌の奥までうるおいを届ける、<br>
+                                                        最新の美顔器を設置。 <br>
+                                                        温熱ケアで血行を促進し、<br>
+                                                        サウナとの相乗効果で透明感アップ。<br>
+                                                </div>
+
+
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        </section>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- ---------------------------------- -->
+    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <img src="../img/footer-girl.png" class="footer-girl" alt="フッターに座る女の子">
+        <div class="footer-box">
+            <!--ひだり-->
+            <div class="footer-shop">
+                <a href=""><img src="../img/footer-rogo.png" width="200px" alt="MCMCサウナのロゴマーク"></a>
+                <p>〒888-8888 <br>
+                    東京都世田谷区8-8-88 <br>
+                    TEL：0180-888-8888 <br>
+                    営業時間：11:00〜23:30
+                </p>
+            </div>
+            <!--真ん中-->
+            <div class="foot-nav">
+                <div class="foot-nav-1">
+                    <a href="../about/index.html">
+                        <div class="foot-nav-base">ABOUT</div>
+                    </a>
+                    <a href="../price/index.html">
+                        <div class="foot-nav-base">PRICE</div>
+                    </a>
+                    <a href="../access/index.html">
+                        <div class="foot-nav-base">ACCESS</div>
+                    </a>
+                </div>
+                <div class="foot-nav-2">
+                    <a href="../faq/index.html">
+                        <div class="foot-nav-base">FAQ</div>
+                    </a>
+                    <a href="../info/index.html">
+                        <div class="foot-nav-base">INFOMATION</div>
+                    </a>
+                </div>
+            </div>
+            <!--みぎ-->
+            <div class="foot-right">
+                <div class="foot-right-txt">
+                    <a href="../privacy-policy/index.html">・個人情報保護法</a><br>
+                    <a href="../contact/index.html">・お問い合わせ</a>
+                </div>
+                <div class="foot-right-sns">
+                    <a href="#"><img src="../img/Instagram_White.png" alt="インスタグラムロゴ" width="42px"></a>
+                    <a href="#"><img src="../img/youtube-White.png" alt="YouTubeロゴ" width="42px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="foot-duck"></div>
+        <p>© 2025 mcmcサウナ</p>
+    </footer>
+    </div>
+    <script src="../js/dance.js"></script>
+    <script src="../js/header.js"></script>
+
+
+    </div>
+
+
+</body>
+
+</html>

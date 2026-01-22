@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/*＊＊＊＊＊＊＊＊＊＊＊header＊＊＊＊＊＊＊＊＊＊＊*/
+/* ハンバーガー */
+header li{font-size:24px;
+font-family:"Luckiest Guy";}
+  header a{font-family:"Luckiest Guy";}
+
+.hamburger-morph {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+
+
+.hamburger-morph span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background:#5275AE;
+  border-radius: 2px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border: 1px solid #ffffff;
+}
+
+.hamburger-morph span:nth-child(1) { top: 12px; }
+.hamburger-morph span:nth-child(2) { top: 22px; }
+.hamburger-morph span:nth-child(3) { top: 32px; }
+
+/* バツ変形 */
+.hamburger-morph.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+.hamburger-morph.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-morph.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* ナビゲーション背景アニメ */
+.nav-morph {
+  position: fixed;
+  inset: 0;
+  background:#F7F7C3;
+  clip-path: circle(0% at 40px 40px);
+  transition: clip-path 0.7s cubic-bezier(0.4, 0, 0.2,1);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.nav-morph.active {
+  clip-path: circle(150% at 40px 40px);
+  pointer-events: auto;
+}
+
+/* メニューリスト */
+.nav-morph__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-morph__item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.nav-morph.active .nav-morph__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-morph.active .nav-morph__item:nth-child(1) { transition-delay: 0.3s; }
+.nav-morph.active .nav-morph__item:nth-child(2) { transition-delay: 0.4s; }
+.nav-morph.active .nav-morph__item:nth-child(3) { transition-delay: 0.5s; }
+.nav-morph.active .nav-morph__item:nth-child(4) { transition-delay: 0.6s; }
+.nav-morph.active .nav-morph__item:nth-child(5) { transition-delay: 0.7s; }
+.nav-morph.active .nav-morph__item:nth-child(6) { transition-delay: 0.8s; }
+.nav-morph.active .nav-morph__item:nth-child(7) { transition-delay: 0.9s; }
+
+/* リンク */
+.nav-morph__link {
+  font-size: 28px;
+  color:#5275AE;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-morph__link:hover {
+  color: #ffffff;
+}
+
+/*＊＊＊＊＊＊＊＊＊＊＊　header　ここまで　＊＊＊＊＊＊＊＊＊＊＊*/
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊トップへ戻るボタン＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+.scroll-top-btn {
+  position: fixed;
+  right: -120px;
+  bottom: 0;
+  width: 125px;
+  height: 206px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 999;
+  transition: right 0.3s cubic-bezier(.19,1,.22,1);
+}
+
+.scroll-top-btn.is-active {
+  right: 0;
+}
+
+.scroll-top-btn img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  outline: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.scroll-top-btn:hover img {
+  content: url("../img/hover.PNG");
+}
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊トップへ戻るボタン　ここまで＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+

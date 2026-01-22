@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊ FOOTER ＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+
+
+footer{
+position: relative;
+border:0 solid #5275AE;
+background-color:#5275AE;
+max-width:100%;
+padding:110px 0;
+z-index:10;
+}
+.footer-girl{position: absolute;
+top:-115px;
+left: 50%;
+  transform: translateX(-50%);}
+.footer-box{max-width:1100px;
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+}
+/* ひだり */
+footer p{color: #FFFF;
+text-align: center;
+}
+/* 真ん中 */
+.foot-nav{
+width:545px;
+margin:0 auto;
+font-family: "Luckiest Guy", "Nico Moji";
+font-size: 24px;
+color:#5275AE;}
+.foot-nav-1{display: flex;
+justify-content: space-between;
+width:545px;
+
+}
+.foot-nav-2{display: flex;
+justify-content: space-between;
+width:355px;
+margin:20px 0 0 92px;
+}
+.foot-nav-base{border:6px solid #FFFFFF;
+background-color:#F7F7C3;
+border-radius:400px;
+width:160px;
+height:70px;
+padding-top:15px;
+font-family: "Luckiest Guy";
+text-align: center;
+}
+.foot-nav-base:hover{border:6px solid #FFFFFF;
+background-color:#5275AE;
+color: #F7F7C3;
+}
+/* みぎ */
+
+.foot-right a{font-size:14px;
+color: #FFFFFF;
+line-height: 3.0;}
+.foot-right-sns{display: flex;
+justify-content: space-between;
+margin-top:20px;}
+
+/* あひる */
+.foot-duck{background-image: url(../img/footer-duck.png);
+    background-repeat: repeat-x;
+width:100%;
+height: 73px;
+margin-top:50px;}
+
+
+
+/* ~~~~~~~~~~~~~~~~レスポンシブ~~~~~~~~~~~~~~~~ */
+/* 　　　　　　PC　　　　　　 */
+@media only screen and (max-width: 1200px) {
+footer{
+padding:90px 0;
+}
+.footer-box{max-width:750px;
+}
+/* 真ん中 */
+.foot-nav{
+width:440px;}
+.foot-nav-1{
+width:430px;
+}
+.foot-nav-2{
+width:300px;
+margin:20px 0 0 67px;
+}
+.foot-nav-base{
+width:140px;
+height:65px;
+font-size:20px;
+}}
+/* みぎ */
+
+
+/* 　　　　　　タブレット　　　　　　 */
+@media only screen and (max-width: 768px) {
+footer{
+padding:90px 0;
+}
+.footer-box{max-width:350px;
+margin:0 auto;
+display: flex;
+flex-direction:column;
+}
+/* ひだり */
+.footer-shop{
+margin:30px auto;
+}
+.footer-shop img{
+width: 150px;
+margin:0 10px;
+}
+footer p{
+text-align:none;
+}
+/* 真ん中 */
+.foot-nav{
+width:160px;
+margin:0 auto;}
+.foot-nav-1{display: flex;
+flex-direction:column;
+width:160px;
+}
+.foot-nav-2{display: flex;
+flex-direction:column;
+width:160px;
+margin: 0;
+}
+.foot-nav-base{
+border-radius:400px;
+height:60px;
+padding-top:12px;
+margin-bottom:10px;
+}
+/* みぎ */
+.foot-right{display: flex;
+    margin:0 auto;
+}
+.foot-right-txt{margin-top:20px;}
+.foot-right-sns{display: flex;
+flex-direction:column;
+margin:20px;}
+}
+
+
+
+/* 　　　　　　スマホ　　　　　　 */
+@media only screen and (max-width: 360px) {
+footer{
+padding:60px 0;
+}
+.footer-box{max-width:300px;
+}
+/* ひだり */
+.footer-shop img{
+width: 150px;
+margin:0 5px;
+}
+/* 真ん中 */
+
+/* みぎ */
+}
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊ FOOTER ここまで＊＊＊＊＊＊＊＊＊＊＊＊＊ */
